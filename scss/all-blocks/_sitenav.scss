@@ -1,0 +1,44 @@
+.nav {
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        width: 285px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    &__item {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__link {
+        font-family: Barlow;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #83888F;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+
+    &__link:hover {
+        color: #000;
+    }
+
+    &__link:active {
+        color: #83888F;
+    }
+
+}
+
+@media only screen and (max-width:570px) {
+    .nav {
+        display: none;
+    }
+}

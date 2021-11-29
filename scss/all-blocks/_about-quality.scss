@@ -1,0 +1,46 @@
+.quality-section {
+    margin: 50px 0 168px;
+}
+
+.quality {
+    padding: 100px 655px 176px 85px;
+    display: flex;
+    background: #2c343e;
+    border-radius: 10px;
+    position: relative;
+
+    &__img {
+        border-radius: 10px;
+        position: absolute;
+        right: 85px;
+        top: -76px;
+    }
+
+}
+
+.quality-left {
+    margin-right: 125px;
+
+    &__heading {
+        margin: 0;
+        width: 520px;
+        margin-bottom: 32px;
+        padding: 0;
+        font-family: Fraunces 9pt;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #fefcf7;
+    }
+
+    &__desc {
+        width: 540px;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 26px;
+        color: #fefcf7;
+    }
+
+}

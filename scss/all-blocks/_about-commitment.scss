@@ -1,0 +1,42 @@
+.commitment-section {
+    margin: 50px 0 245px;
+}
+
+.commitment {
+    margin: 0 auto;
+    width: 1110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__img {
+        width: 445px;
+        height: 520px;
+    }
+
+}
+
+.commitment-hero {
+    width: 540px;
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 32px;
+        padding: 0;
+        font-family: Fraunces 9pt;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #333D4B;
+    }
+
+    &__desc {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 26px;
+        color: #333D4B;
+    }
+
+}
