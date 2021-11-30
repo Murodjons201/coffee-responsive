@@ -3,54 +3,56 @@
 }
 
 .progress {
-    margin-left: 85px;
+    margin-left: 7%;
+    max-width: 1045px;
 
     &__heading {
         margin: 0;
-        margin-bottom: 80px;
+        margin-bottom: 6%;
         padding: 0;
         font-family: Fraunces 9pt;
         font-weight: 900;
         font-size: 24px;
         line-height: 32px;
-        color: #83888F;
+        color: #83888f;
     }
-
 }
 
 .decoration {
     display: flex;
     align-items: center;
-    margin-bottom: 65px;
+    margin-bottom: 6%;
 
     &__circle {
-        width: 30px;
+        width: 100%;
+        max-width: 30px;
         height: 30px;
-        border: 2px solid #0E8784;
+        border: 2px solid #0e8784;
         border-radius: 50%;
     }
 
     &__line {
-        width: 380px;
+        width: 100%;
+        max-width: 380px;
         height: 1px;
-        background-color: #FDD6BA;
+        background-color: #fdd6ba;
     }
-
 }
 
 .progress-list {
     margin: 0;
-    margin-bottom: 65px;
+    margin-bottom: 6%;
     padding: 0;
     display: flex;
     list-style: none;
 
     &__item {
-        width: 285px;
+        width: 100%;
+        max-width: 285px;
     }
 
     &__item + &__item {
-        margin-left: 95px;
+        margin-left: 9%;
     }
 
     &__number {
@@ -58,25 +60,173 @@
         font-weight: 900;
         font-size: 72px;
         line-height: 72px;
-        color: #FDD6BA;
+        color: #fdd6ba;
     }
 
     &__title {
-        margin: 38px 0 42px;
+        margin: 13% 0 15%;
         padding: 0;
-        width: 200px;
+        width: 100%;
+        max-width: 200px;
         font-family: Fraunces 9pt;
         font-style: normal;
         font-weight: 900;
         font-size: 32px;
         line-height: 36px;
-        color: #333D4B;
+        color: #333d4b;
     }
 
     &__desc {
         font-size: 16px;
         line-height: 26px;
-        color: #333D4B;
+        color: #333d4b;
+    }
+}
+
+@media only screen and (max-width: 935px) {
+    .progress-section {
+        margin-bottom: 160px;
     }
 
+    .progress {
+        margin-left: 0;
+    }
+
+    .progress-list {
+        &__item + &__item {
+            margin-left: 5%;
+        }
+
+        &__title {
+            font-size: 31px;
+            line-height: 35px;
+            color: #333d4b;
+        }
+
+        &__desc {
+            font-size: 16px;
+            line-height: 26px;
+            color: #333d4b;
+        }
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .progress-section {
+        margin-bottom: 144px;
+    }
+
+    .progress-list {
+        &__title {
+            font-size: 28px;
+            line-height: 28px;
+            color: #333d4b;
+        }
+
+        &__desc {
+            font-size: 15px;
+            line-height: 23px;
+            color: #333d4b;
+        }
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .progress-section {
+        margin-bottom: 130px;
+    }
+
+    .progress-list {
+        display: flex;
+        flex-direction: column;
+
+        &__item {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        &__item + &__item {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+
+        &__title {
+            margin: 5% 0;
+            width: 100%;
+            max-width: 400px;
+            font-size: 28px;
+            line-height: 28px;
+            color: #333d4b;
+        }
+
+        &__desc {
+            font-size: 15px;
+            line-height: 23px;
+            color: #333d4b;
+        }
+    }
+
+    .decoration {
+        display: flex;
+        align-items: center;
+        margin-bottom: 6%;
+
+        &__circle {
+            width: 100%;
+            max-width: 30px;
+            height: 30px;
+            border: 2px solid #0e8784;
+            border-radius: 50%;
+        }
+
+        &__line {
+            width: 100%;
+            max-width: 210px;
+            height: 1px;
+            background-color: #fdd6ba;
+        }
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .progress-section {
+        margin-bottom: 130px;
+    }
+
+    .progress {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress-list {
+        display: flex;
+        flex-direction: column;
+
+        &__item {
+            width: 100%;
+            max-width: 380px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__item + &__item {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+
+        &__title {
+            margin: 5% 0;
+            width: 100%;
+            max-width: 380px;
+            font-size: 28px;
+            line-height: 28px;
+        }
+    }
+
+    .decoration {
+        display: none;
+    }
 }
